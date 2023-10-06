@@ -1,2 +1,2 @@
 # InnopolisHomeworks
-Web development course homework
+Web development course homeworks
