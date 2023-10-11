@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSolutions Co. - Регистрация</title>
+</head>
+
+<body>
+    <header>
+        <h1>Регистрация</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Заполните форму регистрации</h2>
+            <form action="#">
+                <label for="first_name">Фамилия:</label>
+                <input type="text" id="first_name" required placeholder="Введите фамилию" autofocus minlength="2"
+                    maxlength="50"><br><br>
+
+                <label for="last_name">Имя:</label>
+                <input type="text" id="last_name" required placeholder="Введите имя" minlength="2"
+                    maxlength="50"><br><br>
+
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" required placeholder="Введите имя пользователя" minlength="3"
+                    maxlength="20"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Введите вашу электронную почту"
+                    maxlength="100"><br><br>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" required placeholder="Введите пароль" minlength="6"
+                    maxlength="20"><br><br>
+
+                <label for="confirm_password">Подтверждение пароля:</label>
+                <input type="password" id="confirm_password" required placeholder="Подтвердите пароль" minlength="6"
+                    maxlength="20"><br><br>
+
+                <label>Пол:</label><br>
+                <input type="radio" id="male" checked>
+                <label for="male">Мужской</label><br>
+                <input type="radio" id="female">
+                <label for="female">Женский</label><br>
+                <input type="radio" id="other">
+                <label for="other">Другой</label><br><br>
+
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate"><br><br>
+
+                <label>Интересы (выберите не более 4):</label><br>
+                <input type="checkbox" id="interest1">
+                <label for="interest1">Путешествия</label><br>
+                <input type="checkbox" id="interest2">
+                <label for="interest2">Фотография</label><br>
+                <input type="checkbox" id="interest3">
+                <label for="interest3">Спорт</label><br>
+                <input type="checkbox" id="interest4">
+                <label for="interest4">Искусство</label><br><br>
+
+                <label for="comments">Комментарии:</label><br>
+                <textarea id="comments" rows="4" cols="50" placeholder="Оставьте комментарий"></textarea><br><br>
+
+                <label for="age">Возраст (от 18 лет):</label>
+                <input type="number" id="age" required min="18" max="150" placeholder="Введите возраст"><br><br>
+
+                <input type="checkbox" id="subscribe" checked>
+                <label for="subscribe">Подписка на новости</label><br><br>
+
+                <input type="submit" value="Зарегистрироваться">
+                <input type="reset" value="Сбросить значения">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 WebSolutions Co.</p>
+    </footer>
+</body>
+
+</html>
