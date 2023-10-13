@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,          initial-scale=1.0">
     <title>WebSolutions Co. - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
 </head>
 
 <body>
     <header>
+        <a href="index.html"><img class="logo" src="image/logo.svg" alt="logo"></a>
         <h1>Добро пожаловать в WebSolutions Co.</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-                <li><a href="registration.html">Регистрация</a></li>
+                <li><a class="nav_link nav_link_active" href="index.html">Главная</a></li>
+                <li><a class="nav_link" href="about.html">О нас</a></li>
+                <li><a class="nav_link" href="contact.html">Контакты</a></li>
+                <li><a class="nav_link" href="registration.html">Регистрация</a></li>
             </ul>
         </nav>
     </header>
@@ -82,7 +85,7 @@
             <!-- Разметка изображений -->
             <p>Вот фото котика:</p>
             <div>
-                <img src="/site/image/cat.jpg" alt="Фото котика" width="300" height="200">
+                <img src="image/cat.jpg" alt="Фото котика" width="300" height="200">
                 <!-- Разметка ссылок -->
                 <p>Посетите наш сайт, чтобы узнать больше: <a href="index.html">WebSolutions Co.</a></p>
             </div>
@@ -91,7 +94,7 @@
 
     </main>
     <footer>
-        <p>&copy; 2023 WebSolutions Co.</p>
+        <p>&copy; 2023 WebSolutions Co. <a class="footer_link" href="#top">Вверх</a></p>
     </footer>
 </body>
 
