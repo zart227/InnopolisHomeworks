@@ -1,33 +1,51 @@
-/* Сброс стилей */
 * {
     margin: 0;
     padding: 0;
 }
 
+<<<<<<< HEAD
+
 /* Шрифты и основной стиль страницы */
-body {
+=======>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 body {
     font-family: 'Open Sans', sans-serif;
 }
 
+<<<<<<< HEAD
+
 /* Стили для header */
-.header {
+=======>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .header {
     background-color: #0078d4;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    <<<<<<< HEAD
     /* padding-top: 24px;
     padding-bottom: 24px; */
 }
 
-.header__logo {
+=======padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.footer {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .header__logo {
     width: 110px;
     height: auto;
     margin-right: 10px;
 }
 
+<<<<<<< HEAD
+
 /* Стили для основного контента (main) */
-.main h1 {
+=======>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .main h1 {
     text-align: center;
     margin-bottom: 24px;
 }
@@ -44,12 +62,15 @@ body {
     margin-bottom: 16px;
 }
 
+<<<<<<< HEAD
+
 /* Стили для навигации (nav) и футера (footer) */
-.nav__list {
+=======>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .nav__list {
     display: flex;
     /* padding: 24px 0; */
     list-style: none;
     background-color: #0078d4;
+    <<<<<<< HEAD
     /* padding-top: 24px;
     padding-bottom: 24px; */
 }
@@ -59,7 +80,10 @@ body {
     padding-bottom: 24px;
 }
 
-.nav__link,
+=======
+}
+
+>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .nav__link,
 .footer__link {
     color: #fff;
     text-decoration: none;
@@ -77,13 +101,17 @@ body {
 .footer {
     background-color: #0078d4;
     color: #fff;
+    <<<<<<< HEAD
     /* margin-top: 24px; */
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
 /* Дополнительные стили для основного контента (main) */
-.main__text {
+=======margin-top: 24px;
+}
+
+>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .main__text {
     font-size: 16px;
     line-height: 1.5;
 }
@@ -95,7 +123,12 @@ body {
     margin-bottom: 16px;
 }
 
-.main__quote {
+<<<<<<< HEAD=======
+/* .main__item {
+    font-family: Arial, sans-serif;
+} */
+
+>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .main__quote {
     font-style: italic;
 }
 
@@ -120,7 +153,13 @@ body {
     background-color: #f2f2f2;
 }
 
-.main__link {
+<<<<<<< HEAD=======
+/* .main__image {
+    width: 100%;
+    height: auto;
+} */
+
+>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .main__link {
     color: #0078d4;
     text-decoration: none;
 }
@@ -129,7 +168,9 @@ body {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
+
 /* Стили для блока контактной информации (contact-info) */
-.contact-info__list {
+=======>>>>>>>5b5f2cf198a80847193b789a946f4fe16e0fe9d4 .contact-info__list {
     margin-bottom: 16px;
 }
