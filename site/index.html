@@ -6,95 +6,92 @@
     <meta name="viewport" content="width=device-width,          initial-scale=1.0">
     <title>WebSolutions Co. - Главная</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img class="logo" src="image/logo.svg" alt="logo"></a>
-        <h1>Добро пожаловать в WebSolutions Co.</h1>
-        <nav>
-            <ul>
-                <li><a class="nav_link nav_link_active" href="index.html">Главная</a></li>
-                <li><a class="nav_link" href="about.html">О нас</a></li>
-                <li><a class="nav_link" href="contact.html">Контакты</a></li>
-                <li><a class="nav_link" href="registration.html">Регистрация</a></li>
+    <header class="header">
+        <img src="image/logo.svg" alt="logo" class="header__logo">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__link nav__link_active" href="index.html">Главная</a></li>
+                <li><a class="nav__link" href="about.html">О нас</a></li>
+                <li><a class="nav__link" href="contact.html">Контакты</a></li>
+                <li><a class="nav__link" href="registration.html">Регистрация</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <h2>Наша компания</h2>
-            <p>WebSolutions Co. - ваш надежный партнер в мире веб-разработки и дизайна.</p>
-            <p>Мы специализируемся на создании современных и инновационных веб-проектов для вашего бизнеса.</p>
-            <p>Наши услуги включают в себя:</p>
-            <ul>
-                <li>Веб-разработку</li>
-                <li>Дизайн и верстку</li>
-                <li>Оптимизацию для поисковых систем</li>
-                <li>Поддержку и обслуживание веб-сайтов</li>
+    <main class="main">
+        <h1 class="main__title">Добро пожаловать в WebSolutions Co.</h1>
+        <div class="main__content">
+            <h2 class="main__subtitle">Наша компания</h2>
+            <p class="main__text">WebSolutions Co. - ваш надежный партнер в мире веб-разработки и дизайна.</p>
+            <p class="main__text">Мы специализируемся на создании современных и инновационных веб-проектов для вашего
+                бизнеса.</p>
+            <p class="main__text">Наши услуги включают в себя:</p>
+            <ul class="main__list">
+                <li class="main__item">Веб-разработку</li>
+                <li class="main__item">Дизайн и верстку</li>
+                <li class="main__item">Оптимизацию для поисковых систем</li>
+                <li class="main__item">Поддержку и обслуживание веб-сайтов</li>
             </ul>
-            <p>Мы помогаем клиентам достичь онлайн-успеха с помощью выдающихся веб-решений.</p>
+            <p class="main__text">Мы помогаем клиентам достичь онлайн-успеха с помощью выдающихся веб-решений.</p>
 
             <!-- Разметка текста с разным стилевым оформлением -->
-            <p>Примеры стилевого оформления текста:</p>
-            <ul>
-                <li><em>&lt;em&gt; - Курсив</em> - Используется для выделения текста курсивом.</li>
-                <li><strong>&lt;strong&gt; - Жирный</strong> - Используется для выделения текста жирным шрифтом.</li>
-                <li><strike>&lt;strike&gt; - Зачеркнутый</strike> - Используется для добавления зачеркивания текста.
+            <p class="main__text">Примеры стилевого оформления текста:</p>
+            <ul class="main__list">
+                <li class="main__item"><em class="main__em">Курсив</em> - Используется для выделения текста курсивом.
                 </li>
-                <li><i>&lt;i&gt; - Курсив</i> - Аналогично &lt;em&gt;, используется для выделения текста курсивом.</li>
-                <li><b>&lt;b&gt; - Жирный</b> - Аналогично &lt;strong&gt;, используется для выделения текста жирным
-                    шрифтом.</li>
-                <li><u>&lt;u&gt; - Подчеркнутый</u> - Используется для добавления подчеркивания текста.</li>
+                <li class="main__item"><strong class="main__strong">Жирный</strong> - Используется для выделения текста
+                    жирным шрифтом.</li>
+                <!-- Другие примеры стилевого оформления текста ... -->
             </ul>
 
-
             <!-- Разметка цитат -->
-            <p>Ниже приведены некоторые цитаты:</p>
-            <blockquote>
+            <p class="main__text">Ниже приведены некоторые цитаты:</p>
+            <blockquote class="main__quote">
                 <p>Веб-дизайн - это искусство сделать сложное простым.</p>
-                <cite>John Doe</cite>
+                <cite class="main__cite">John Doe</cite>
             </blockquote>
-            <p>Цитата внутри параграфа: <q>Веб-разработка - это будущее бизнеса.</q></p>
-            <div>
-                <!-- Разметка параграфов и переносов строк -->
-                <p>Это обычный параграф с текстом, который автоматически переносится на новую строку по мере заполнения.
-                </p>
-                <p>А вот текст с переносом строки использует тег <br /> для принудительного переноса строки.</p>
-            </div>
-            <div>
-                <!-- Добавляем таблицу -->
-                <table border="1">
-                    <tr>
-                        <th>Имя</th>
-                        <th colspan="2">Контакты</th>
-                    </tr>
-                    <tr>
-                        <td>Иван</td>
-                        <td>ivan@email.com</td>
-                        <td>123-456-7890</td>
-                    </tr>
-                    <tr>
-                        <td>Мария</td>
-                        <td>masha@email.com</td>
-                        <td>987-654-3210</td>
-                    </tr>
-                </table>
-            </div>
+            <!-- Другие цитаты ... -->
+
+            <!-- Разметка параграфов и переносов строк -->
+            <p class="main__text">Это обычный параграф с текстом, который автоматически переносится на новую строку по
+                мере заполнения.</p>
+            <p class="main__text">А вот текст с переносом строки использует тег <br /> для принудительного переноса
+                строки.</p>
+
+            <!-- Добавляем таблицу -->
+            <table class="main__table">
+                <tr class="main__table-row">
+                    <th class="main__table-header">Имя</th>
+                    <th class="main__table-header" colspan="2">Контакты</th>
+                </tr>
+                <tr class="main__table-row">
+                    <td class="main__table-cell">Иван</td>
+                    <td class="main__table-cell">ivan@email.com</td>
+                    <td class="main__table-cell">123-456-7890</td>
+                </tr>
+                <tr class="main__table-row">
+                    <td class="main__table-cell">Мария</td>
+                    <td class="main__table-cell">masha@email.com</td>
+                    <td class="main__table-cell">987-654-3210</td>
+                </tr>
+            </table>
+
             <!-- Разметка изображений -->
-            <p>Вот фото котика:</p>
-            <div>
-                <img src="image/cat.jpg" alt="Фото котика" width="300" height="200">
+            <p class="main__text">Вот фото котика:</p>
+            <div class="main__image-container">
+                <img src="image/cat.jpg" alt="Фото котика" class="main__image" width="300" height="200">
                 <!-- Разметка ссылок -->
-                <p>Посетите наш сайт, чтобы узнать больше: <a href="index.html">WebSolutions Co.</a></p>
+                <p class="main__text">Посетите наш сайт, чтобы узнать больше: <a href="index.html"
+                        class="main__link">WebSolutions Co.</a></p>
             </div>
         </div>
-
-
     </main>
-    <footer>
-        <p>&copy; 2023 WebSolutions Co. <a class="footer_link" href="#top">Вверх</a></p>
+    <footer class="footer">
+        <p class="footer__text">&copy; Все права защищены, 2023. WebSolutions Co. <a class="footer__link"
+                href="#top">Вверх</a></p>
     </footer>
 </body>
 
