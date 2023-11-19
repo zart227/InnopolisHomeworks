@@ -1,98 +1,135 @@
-header {
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Шрифты и основной стиль страницы */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Стили для header */
+.header {
     background-color: #0078d4;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
 }
 
-footer {
-    background-color: #0078d4;
-    color: #fff;
-    padding: 10px;
-}
-
-.logo {
+.header__logo {
     width: 110px;
     height: auto;
     margin-right: 10px;
-    /* Отступ справа от логотипа */
 }
 
-h1 {
-    font-family: sans-serif;
+/* Стили для основного контента (main) */
+.main h1 {
     text-align: center;
+    margin-bottom: 24px;
 }
 
-h2 {
-    font-family: sans-serif;
+.main h2 {
     font-weight: normal;
     background-color: #eee;
+    margin-bottom: 20px;
 }
 
-p {
-    font-family: Arial, sans-serif;
+.main p {
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 16px;
 }
 
-body {
-    font-family:
-        'Roboto',
-        Helvetica, Arial, sans-serif;
+/* Стили для навигации (nav) и футера (footer) */
+.nav__list {
+    display: flex;
+    /* padding: 24px 0; */
+    list-style: none;
+    background-color: #0078d4;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
 }
 
-input,
-textarea {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px;
+.nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.nav_link,
-.footer_link {
+.nav__link,
+.footer__link {
     color: #fff;
     text-decoration: none;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-style: italic;
     padding: 5px 10px;
     margin-right: 5px;
     display: inline-block;
 }
 
-.nav_link_active {
+.nav__link_active {
     text-decoration: underline;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.footer {
+    background-color: #0078d4;
+    color: #fff;
+    /* margin-top: 24px; */
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-/* При наведении на ссылки меню */
-.nav_link:hover,
-.footer_link:hover {
-    background-color: #dddddda4;
-    /* Цвет фона при наведении*/
+/* Дополнительные стили для основного контента (main) */
+.main__text {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-/* Стили для таблицы */
-table {
-    /* width: 100%; */
+.main__list {
+    padding-left: 20px;
+    /* Левый отступ для элементов списка */
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+
+.main__quote {
+    font-style: italic;
+}
+
+.main__cite {
+    font-weight: bold;
+}
+
+.main__table {
     border-collapse: collapse;
-    /* Убираем отступы между ячейками таблицы */
+    width: 100%;
+    margin-bottom: 16px;
 }
 
-table,
-th,
-td {
+.main__table-row,
+.main__table-cell,
+.main__table-header {
     border: 1px solid #ddd;
-    /* Границы таблицы и ячеек */
+    padding: 8px;
 }
 
-th,
-td {
-    padding: 5px;
+.main__table-header {
+    background-color: #f2f2f2;
+}
+
+.main__link {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+.main__link:hover {
+    text-decoration: underline;
+}
+
+/* Стили для блока контактной информации (contact-info) */
+.contact-info__list {
+    margin-bottom: 16px;
 }
