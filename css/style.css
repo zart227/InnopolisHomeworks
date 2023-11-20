@@ -14,14 +14,14 @@ body {
     background-color: #0078d4;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     /* padding-top: 24px;
     padding-bottom: 24px; */
 }
 
 .header__logo {
-    width: 110px;
+    width: 80px;
     height: auto;
     margin-right: 10px;
 }
