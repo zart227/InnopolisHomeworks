@@ -70,6 +70,13 @@ body {
     display: inline-block;
 }
 
+/* При наведении на ссылки меню */
+.nav__link:hover,
+.footer__link:hover {
+    background-color: #dddddda4;
+    /* Цвет фона при наведении*/
+}
+
 .nav__link_active {
     text-decoration: underline;
 }
