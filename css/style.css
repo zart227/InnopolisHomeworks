@@ -14,10 +14,7 @@ body {
     background-color: #0078d4;
     color: #fff;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
 }
 
 .header__logo {
@@ -47,11 +44,8 @@ body {
 /* Стили для навигации (nav) и футера (footer) */
 .nav__list {
     display: flex;
-    /* padding: 24px 0; */
     list-style: none;
     background-color: #0078d4;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
 }
 
 .nav {
@@ -63,7 +57,6 @@ body {
 .footer__link {
     color: #fff;
     text-decoration: none;
-    /* font-family: sans-serif; */
     font-style: italic;
     padding: 5px 10px;
     margin-right: 5px;
@@ -84,7 +77,6 @@ body {
 .footer {
     background-color: #0078d4;
     color: #fff;
-    /* margin-top: 24px; */
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -97,7 +89,6 @@ body {
 
 .main__list {
     padding-left: 20px;
-    /* Левый отступ для элементов списка */
     list-style-type: none;
     margin-bottom: 16px;
 }
@@ -139,4 +130,132 @@ body {
 /* Стили для блока контактной информации (contact-info) */
 .contact-info__list {
     margin-bottom: 16px;
+}
+
+/* Общие стили, которые применяются всегда */
+
+/* Стили для широких экранов (больше 768px) */
+@media screen and (min-width: 768px) {
+    .header__logo {
+        width: 110px;
+    }
+
+    .nav__list {
+        display: flex;
+        padding: 24px 0;
+        list-style: none;
+    }
+
+    .nav__link,
+    .footer__link {
+        color: #fff;
+        text-decoration: none;
+        font-style: italic;
+        padding: 5px 10px;
+        margin-right: 5px;
+        display: inline-block;
+    }
+
+    .nav__link:hover,
+    .footer__link:hover {
+        background-color: #dddddda4;
+    }
+
+    .nav__link_active {
+        text-decoration: underline;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__button {
+        display: none;
+    }
+}
+
+
+/* Стили для узких экранов (меньше 768px) */
+@media screen and (max-width: 767px) {
+    .header__logo {
+        width: 80px;
+    }
+
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* Центрирование содержимого по горизонтали */
+        align-items: center;
+    }
+
+
+    .nav__link,
+    .footer__link {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+        color: #fff;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .nav__link:hover,
+    .footer__link:hover {
+        background-color: #dddddda4;
+    }
+
+    .nav__link_active {
+        text-decoration: underline;
+    }
+}
+
+/* Стили для очень узких экранов (меньше 390px) */
+@media screen and (max-width: 390px) {
+    .header__logo {
+        width: 60px;
+    }
+
+    body {
+        max-width: 100%;
+        /* Установим максимальную ширину контента в 100% */
+        margin: 0 auto;
+        /* Центрируем контент внутри .main__content */
+        /* padding: 0 16px; */
+        /* Добавим небольшие внутренние отступы по бокам */
+    }
+
+    .main h1 {
+        font-size: 1.5em;
+        margin-bottom: 24px;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+        margin-bottom: 16px;
+    }
+
+    .main p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .main__list {
+        padding-left: 10px;
+    }
+
+    .footer {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
 }
