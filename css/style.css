@@ -2,6 +2,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* Добавлено свойство box-sizing для всех элементов */
 }
 
 /* Шрифты и основной стиль страницы */
@@ -170,12 +172,7 @@ body {
         justify-content: space-between;
         align-items: center;
     }
-
-    .nav__button {
-        display: none;
-    }
 }
-
 
 /* Стили для узких экранов (меньше 768px) */
 @media screen and (max-width: 767px) {
@@ -183,15 +180,12 @@ body {
         width: 80px;
     }
 
-
     .header {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* Центрирование содержимого по горизонтали */
         align-items: center;
     }
-
 
     .nav__link,
     .footer__link {
@@ -202,7 +196,6 @@ body {
         text-decoration: none;
         font-style: italic;
     }
-
 
     .header {
         flex-direction: column;
@@ -226,13 +219,13 @@ body {
         width: 60px;
     }
 
+    .nav {
+        max-width: 100%;
+    }
+
     body {
         max-width: 100%;
-        /* Установим максимальную ширину контента в 100% */
         margin: 0 auto;
-        /* Центрируем контент внутри .main__content */
-        /* padding: 0 16px; */
-        /* Добавим небольшие внутренние отступы по бокам */
     }
 
     .main h1 {
@@ -257,5 +250,21 @@ body {
     .footer {
         padding-top: 18px;
         padding-bottom: 18px;
+    }
+
+    .nav__link,
+    .footer__link {
+        max-width: 100%;
+        word-wrap: break-word;
+        font-size: 0.9em;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+    }
+
+    .main__image {
+        max-width: 100%;
+        height: auto;
     }
 }
